@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header, footer {
+            background: #4CAF50;
+            color: white;
+            padding: 10px;
+        }
+        section {
+            background: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>HTML5 Test Page</h1>
+    <p>Use this page to test HTML, CSS, and JavaScript features.</p>
+</header>
+
+<section>
+    <h2>Headings & Paragraphs</h2>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <p>This is a sample paragraph with <strong>bold</strong> and <em>italic</em> text.</p>
+</section>
+
+<section>
+    <h2>Lists</h2>
+    <ul>
+        <li>Unordered item 1</li>
+        <li>Unordered item 2</li>
+    </ul>
+    <ol>
+        <li>Ordered item 1</li>
+        <li>Ordered item 2</li>
+    </ol>
+</section>
+
+<section>
+    <h2>Table</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Role</th>
+        </tr>
+        <tr>
+            <td>Alice</td>
+            <td>Developer</td>
+        </tr>
+        <tr>
+            <td>Bob</td>
+            <td>Designer</td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h2>Form</h2>
+    <form onsubmit="alert('Form submitted!'); return false;">
+        <label>Name: <input type="text" name="name" required></label><br><br>
+        <label>Email: <input type="email" name="email" required></label><br><br>
+        <label>Message:<br>
+            <textarea name="message" rows="4" cols="30"></textarea>
+        </label><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<section>
+    <h2>Media</h2>
+    <p>Image:</p>
+    <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+    <p>Audio:</p>
+    <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <p>Video:</p>
+    <video width="320" height="240" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
+
+<section>
+    <h2>JavaScript Test</h2>
+    <p id="js-output">Click the button to see JavaScript in action.</p>
+    <button onclick="document.getElementById('js-output').textContent = 'Button clicked at ' + new Date().toLocaleTimeString();">
+        Click Me
+    </button>
+</section>
+
+<footer>
+    <p>&copy; 2026 HTML Test Page</p>
+</footer>
+
+</body>
+</html>
+
